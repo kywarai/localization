@@ -1,11 +1,11 @@
 {
   "tabs/server": "Local Server",
-  "tabs/extensions": "Extensions",
+  "tabs/extensions": "LM Runtimes",
   "loadSettings/title": "Load settings",
   "modelSettings/placeholder": "Select a model to configure it",
 
   "loadedModels/noModels": "No models loaded",
-  
+
   "serverOptions/title": "Server Options",
   "serverOptions/configurableTitle": "Configurable Options",
   "serverOptions/port/hint": "Set which networking port the local server will use. By default, LM Studio uses the port 1234. You might need to change this if the port is already in use.",
@@ -27,8 +27,10 @@
   "serverOptions/contentLogging/title": "Log Prompts and Responses",
   "serverOptions/contentLogging/subtitle": "Local request / response logging settings",
   "serverOptions/contentLogging/hint": "Whether to log prompts and/or the response in the local server log file.",
+  "serverOptions/jitModelLoading/title": "Just-in-Time Model Loading",
+  "serverOptions/jitModelLoading/hint": "When enabled, if a request specified a model that is not loaded, it will be automatically loaded and used. In addition, the \"/v1/models\" endpoint will also include models that are not yet loaded.",
   "serverOptions/loadModel/error": "Failed to load model",
-  
+
   "serverLogs/scrollToBottom": "Jump to bottom",
   "serverLogs/clearLogs": "Clear logs ({{shortcut}})",
   "serverLogs/openLogsFolder": "Open server logs folder",
@@ -36,8 +38,8 @@
   "runtimeSettings/title": "Runtime settings",
   "runtimeSettings/chooseRuntime/title": "Configure Runtimes",
   "runtimeSettings/chooseRuntime/description": "Select a runtime for each model format",
-  "runtimeSettings/chooseRuntime/showAllVersions/label": "Show all versions",
-  "runtimeSettings/chooseRuntime/showAllVersions/hint": "By default, LM Studio only shows the latest version of each runtime. Enable this option to see all available versions.",
+  "runtimeSettings/chooseRuntime/showAllVersions/label": "Show all runtimes",
+  "runtimeSettings/chooseRuntime/showAllVersions/hint": "By default, LM Studio only shows the latest version of each compatible runtime. Enable this option to see all available runtimes.",
   "runtimeSettings/chooseRuntime/select/placeholder": "Select a Runtime",
 
   "runtimeOptions/uninstall": "Uninstall",
@@ -47,6 +49,9 @@
   "runtimeOptions/uninstallDialog/error": "Failed to uninstall runtime",
   "runtimeOptions/uninstallDialog/confirm": "Continue and Uninstall",
   "runtimeOptions/uninstallDialog/cancel": "Cancel",
+  "runtimeOptions/noCompatibleRuntimes": "No compatible runtimes found",
+  "runtimeOptions/downloadIncompatibleRuntime": "This runtime was determined to be incompatible with your machine. It will most likely not work.",
+  "runtimeOptions/noRuntimes": "No runtimes found",
 
   "inferenceParams/noParams": "No configurable inference parameters available for this model type",
 
